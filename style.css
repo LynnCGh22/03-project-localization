@@ -666,6 +666,13 @@ html[dir="rtl"] .navbar .dropdown {
     color: lightgreen; /* Light green or mint green accent */
 }
 
+[data-i18n="grid1_desc"],
+[data-i18n="grid2_desc"],
+[data-i18n="grid3_desc"] {
+    color: lightgreen; /* softer green for readability */
+}
+
+
 [data-i18n="global_title"] {
     color: #7CFC00;
     text-shadow: 0 0 8px rgba(124, 252, 0, 0.6); /* To give the text a glowing effect */
@@ -679,6 +686,13 @@ html[dir="rtl"] .navbar .dropdown {
 [data-i18n="impact_title"] {
     color: #7CFC00;
     text-shadow: 0 0 8px rgba(124, 252, 0, 0.6); /* To give the text a glowing effect */
+}
+
+[data-i18n="grid1_title"],
+[data-i18n="grid2_title"],
+[data-i18n="grid3_title"] {
+    color: #7CFC00;
+    text-shadow: 0 0 6px rgba(124, 252, 0, 0.6);
 }
 
 

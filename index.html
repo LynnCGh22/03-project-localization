@@ -226,7 +226,8 @@
   </p>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
-  <a class="navbar-brand" href="#">Intel Timeline</a>
+  <a class="navbar-brand" href="#" data-i18n="navbar_title">Intel Timeline</a>
+
 
   <div class="dropdown ms-auto">
     <button class="btn btn-outline-light dropdown-toggle"
@@ -346,64 +347,54 @@
 
   <ul class="nav nav-tabs justify-content-center mb-3">
     <li class="nav-item">
-      <button class="nav-link active"
-              data-bs-toggle="tab"
-              data-bs-target="#us">
-        United States
-      </button>
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#us" data-i18n="tab_us">United States</button>
     </li>
+
     <li class="nav-item">
-      <button class="nav-link"
-              data-bs-toggle="tab"
-              data-bs-target="#eu">
-        Europe
-      </button>
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#eu" data-i18n="tab_eu">Europe</button>
     </li>
+
     <li class="nav-item">
-      <button class="nav-link"
-              data-bs-toggle="tab"
-              data-bs-target="#asia">
-        Asia
-      </button>
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#asia" data-i18n="tab_asia">Asia</button>
     </li>
   </ul>
 
   <div class="tab-content p-4 border rounded shadow-sm bg-light">
 
     <div class="tab-pane fade show active" id="us">
-      <p class="intel-text">
+      <p class="intel-text" data-i18n="us_desc">
         Intel’s U.S. operations focus on renewable electricity sourcing,
         semiconductor manufacturing efficiency, and water restoration
         projects across Arizona and Oregon facilities.
       </p>
-      <ul class="intel-text">
-        <li>100% renewable electricity in key campuses</li>
-        <li>Advanced semiconductor water recycling systems</li>
-        <li>Community STEM + sustainability investments</li>
+      <ul class="intel-text" data-i18n="us_desc_list">
+        <li data-i18n="us_bullet1">100% renewable electricity in key campuses</li>
+        <li data-i18n="us_bullet2">Advanced semiconductor water recycling systems</li>
+        <li data-i18n="us_bullet3">Community STEM + sustainability investments</li>
       </ul>
     </div>
 
     <div class="tab-pane fade" id="eu">
-      <p class="intel-text">
+      <p class="intel-text data-i18n="eu_desc">
         European sustainability initiatives emphasize green manufacturing,
         carbon reduction strategies, and regulatory alignment with EU climate goals.
       </p>
-      <ul class="intel-text">
-        <li>Low-carbon fabrication facilities</li>
-        <li>Partnerships with EU renewable providers</li>
-        <li>Supply chain emissions tracking</li>
+      <ul class="intel-text" data-i18n="eu_desc_list">
+        <li data-i18n="eu_bullet1">Low-carbon fabrication facilities</li>
+        <li data-i18n="eu_bullet2">Partnerships with EU renewable providers</li>
+        <li data-i18n="eu_bullet3">Supply chain emissions tracking</li>
       </ul>
     </div>
 
     <div class="tab-pane fade" id="asia">
-      <p class="intel-text">
+      <p class="intel-text" data-i18n="asia_desc">
         Intel’s Asia-Pacific region advances energy-efficient data centers,
         renewable integration, and sustainable infrastructure partnerships.
       </p>
-      <ul class="intel-text">
-        <li>Green data center optimization</li>
-        <li>Solar and wind integration programs</li>
-        <li>Water conservation expansion projects</li>
+      <ul class="intel-text" data-i18n="asia_desc_list">
+        <li data-i18n="asia_bullet1">Green data center optimization</li>
+        <li data-i18n="asia_bullet2">Solar and wind integration programs</li>
+        <li data-i18n="asia_bullet3">Water conservation expansion projects</li>
       </ul>
     </div>
 
@@ -643,6 +634,33 @@ const translations = {
     footer_terms: "Terms of Use",
     footer_contact: "Contact",
 
+    innovation_button: "Learn More About Intel Innovation",
+    navbar_title: "Intel Timeline",
+
+    impact_title: "Sustainability Impact Areas",
+
+    global_title: "Global Sustainability Initiatives",
+    tab_us: "United States",
+    tab_eu: "Europe",
+    tab_asia: "Asia",
+
+    us_desc: "Intel’s U.S. operations focus on renewable electricity sourcing, semiconductor manufacturing efficiency, and water restoration projects across Arizona and Oregon facilities.",
+    us_bullet1: "100% renewable electricity in key campuses",
+    us_bullet2: "Advanced semiconductor water recycling systems",
+    us_bullet3: "Community STEM + sustainability investments",
+
+    eu_desc: "European sustainability initiatives emphasize green manufacturing, carbon reduction strategies, and regulatory alignment with EU climate goals.",
+    eu_bullet1: "Low-carbon fabrication facilities",
+    eu_bullet2: "Partnerships with EU renewable providers",
+    eu_bullet3: "Supply chain emissions tracking",
+
+    asia_desc: "Intel’s Asia-Pacific region advances energy-efficient data centers, renewable integration, and sustainable infrastructure partnerships.",
+    asia_bullet1: "Green data center optimization",
+    asia_bullet2: "Solar and wind integration programs",
+    asia_bullet3: "Water conservation expansion projects",
+
+    stats_title: "Sustainability Progress",
+
   },
 
   es: {
@@ -715,6 +733,42 @@ const translations = {
     footer_privacy: "Política de Privacidad",
     footer_terms: "Términos de Uso",
     footer_contact: "Contacto",
+
+    innovation_button: "Conozca Más Sobre la Innovación de Intel",
+    navbar_title: "Cronología de Intel",
+
+    impact_title: "Áreas de Impacto en Sostenibilidad",
+    impact_climate: "Acción Climática",
+    impact_climate_desc: "Intel está comprometida a lograr emisiones netas cero de gases de efecto invernadero para 2040.",
+    impact_energy: "Energía Renovable",
+    impact_energy_desc: "Aumentar el uso global de electricidad renovable en las instalaciones de fabricación.",
+    impact_water: "Gestión del Agua",
+    impact_water_desc: "Conservación de miles de millones de galones de agua mediante sistemas avanzados de reciclaje.",
+
+    global_title: "Iniciativas Globales de Sostenibilidad",
+    tab_us: "Estados Unidos",
+    tab_eu: "Europa",
+    tab_asia: "Asia",
+
+    us_desc: "Las operaciones de Intel en EE. UU. se centran en el abastecimiento de electricidad renovable, la eficiencia en la fabricación de semiconductores y proyectos de restauración del agua en las instalaciones de Arizona y Oregón.",
+    us_bullet1: "100% de electricidad renovable en campus clave",
+    us_bullet2: "Sistemas avanzados de reciclaje de agua para semiconductores",
+    us_bullet3: "Inversiones comunitarias en STEM y sostenibilidad",
+
+    eu_desc: "Las iniciativas europeas de sostenibilidad enfatizan la fabricación ecológica, estrategias de reducción de carbono y el cumplimiento regulatorio con los objetivos climáticos de la UE.",
+    eu_bullet1: "Instalaciones de fabricación de bajo carbono",
+    eu_bullet2: "Alianzas con proveedores europeos de energía renovable",
+    eu_bullet3: "Seguimiento de emisiones en la cadena de suministro",
+
+    asia_desc: "La región de Asia-Pacífico de Intel impulsa centros de datos energéticamente eficientes, integración de energías renovables y asociaciones para infraestructura sostenible.",
+    asia_bullet1: "Optimización de centros de datos ecológicos",
+    asia_bullet2: "Programas de integración solar y eólica",
+    asia_bullet3: "Proyectos ampliados de conservación del agua",
+
+    stats_title: "Progreso en Sostenibilidad",
+    stats_renewable: "Uso de Electricidad Renovable",
+    stats_water: "Restauración Global del Agua",
+    stats_carbon: "Reducción de Emisiones de Carbono",
 
   },
 
@@ -790,6 +844,42 @@ const translations = {
     footer_terms: "Conditions d’Utilisation",
     footer_contact: "Contact",
 
+    innovation_button: "En Savoir Plus sur l’Innovation d’Intel",
+    navbar_title: "Chronologie d’Intel",
+
+    impact_title: "Domaines d’Impact en Matière de Durabilité",
+    impact_climate: "Action Climatique",
+    impact_climate_desc: "Intel s’engage à atteindre la neutralité carbone d’ici 2040.",
+    impact_energy: "Énergie Renouvelable",
+    impact_energy_desc: "Augmenter l’utilisation mondiale d’électricité renouvelable dans les installations de fabrication.",
+    impact_water: "Gestion de l’Eau",
+    impact_water_desc: "Préserver des milliards de litres d’eau grâce à des systèmes avancés de recyclage.",
+
+    global_title: "Initiatives Mondiales de Durabilité",
+    tab_us: "États-Unis",
+    tab_eu: "Europe",
+    tab_asia: "Asie",
+
+    us_desc: "Les opérations américaines d’Intel se concentrent sur l’approvisionnement en électricité renouvelable, l’efficacité de la fabrication des semi-conducteurs et des projets de restauration de l’eau en Arizona et en Oregon.",
+    us_bullet1: "100 % d’électricité renouvelable dans les principaux campus",
+    us_bullet2: "Systèmes avancés de recyclage de l’eau pour semi-conducteurs",
+    us_bullet3: "Investissements communautaires dans les programmes STEM et la durabilité",
+
+    eu_desc: "Les initiatives européennes de durabilité mettent l’accent sur la fabrication écologique, les stratégies de réduction du carbone et l’alignement réglementaire avec les objectifs climatiques de l’UE.",
+    eu_bullet1: "Installations de fabrication à faible émission de carbone",
+    eu_bullet2: "Partenariats avec des fournisseurs européens d’énergie renouvelable",
+    eu_bullet3: "Suivi des émissions de la chaîne d’approvisionnement",
+
+    asia_desc: "La région Asie-Pacifique d’Intel fait progresser les centres de données économes en énergie, l’intégration des énergies renouvelables et les partenariats pour une infrastructure durable.",
+    asia_bullet1: "Optimisation des centres de données écologiques",
+    asia_bullet2: "Programmes d’intégration solaire et éolienne",
+    asia_bullet3: "Projets élargis de conservation de l’eau",
+
+    stats_title: "Progrès en Matière de Durabilité",
+    stats_renewable: "Utilisation d’Électricité Renouvelable",
+    stats_water: "Restauration Mondiale de l’Eau",
+    stats_carbon: "Réduction des Émissions de Carbone",
+
   },
 
   zh: {
@@ -863,6 +953,42 @@ const translations = {
     footer_privacy: "隐私政策",
     footer_terms: "使用条款",
     footer_contact: "联系我们",
+
+    innovation_button: "了解更多英特尔创新内容",
+    navbar_title: "英特尔时间轴",
+
+    impact_title: "可持续发展影响领域",
+    impact_climate: "气候行动",
+    impact_climate_desc: "英特尔承诺在 2040 年前实现温室气体净零排放。",
+    impact_energy: "可再生能源",
+    impact_energy_desc: "在全球制造设施中提高可再生电力的使用率。",
+    impact_water: "水资源管理",
+    impact_water_desc: "通过先进的回收系统节约数十亿加仑的水资源。",
+
+    global_title: "全球可持续发展举措",
+    tab_us: "美国",
+    tab_eu: "欧洲",
+    tab_asia: "亚洲",
+
+    us_desc: "英特尔在美国的运营重点包括可再生电力采购、半导体制造效率以及在亚利桑那州和俄勒冈州开展的水资源修复项目。",
+    us_bullet1: "关键园区实现 100% 可再生电力",
+    us_bullet2: "先进的半导体用水回收系统",
+    us_bullet3: "社区 STEM 与可持续发展投资",
+
+    eu_desc: "欧洲的可持续发展举措强调绿色制造、碳减排策略以及与欧盟气候目标的监管一致性。",
+    eu_bullet1: "低碳制造设施",
+    eu_bullet2: "与欧洲可再生能源供应商合作",
+    eu_bullet3: "供应链排放跟踪",
+
+    asia_desc: "英特尔亚太地区推动节能数据中心、可再生能源整合以及可持续基础设施合作。",
+    asia_bullet1: "绿色数据中心优化",
+    asia_bullet2: "太阳能与风能整合项目",
+    asia_bullet3: "水资源保护扩展项目",
+
+    stats_title: "可持续发展进展",
+    stats_renewable: "可再生电力使用情况",
+    stats_water: "全球水资源修复",
+    stats_carbon: "碳排放减少",
 
   },
 
@@ -938,6 +1064,42 @@ const translations = {
     footer_terms: "उपयोग की शर्तें",
     footer_contact: "संपर्क करें",
 
+    innovation_button: "इंटेल नवाचार के बारे में अधिक जानें",
+    navbar_title: "इंटेल टाइमलाइन",
+
+    impact_title: "सततता प्रभाव क्षेत्र",
+    impact_climate: "जलवायु कार्रवाई",
+    impact_climate_desc: "इंटेल 2040 तक ग्रीनहाउस गैसों के शुद्ध-शून्य उत्सर्जन को प्राप्त करने के लिए प्रतिबद्ध है।",
+    impact_energy: "नवीकरणीय ऊर्जा",
+    impact_energy_desc: "वैश्विक विनिर्माण सुविधाओं में नवीकरणीय बिजली के उपयोग को बढ़ाना।",
+    impact_water: "जल प्रबंधन",
+    impact_water_desc: "उन्नत पुनर्चक्रण प्रणालियों के माध्यम से अरबों गैलन पानी का संरक्षण।",
+
+    global_title: "वैश्विक सततता पहल",
+    tab_us: "संयुक्त राज्य",
+    tab_eu: "यूरोप",
+    tab_asia: "एशिया",
+
+    us_desc: "इंटेल के अमेरिकी संचालन नवीकरणीय बिजली स्रोत, सेमीकंडक्टर विनिर्माण दक्षता और एरिज़ोना तथा ओरेगन सुविधाओं में जल पुनर्स्थापन परियोजनाओं पर केंद्रित हैं।",
+    us_bullet1: "मुख्य परिसरों में 100% नवीकरणीय बिजली",
+    us_bullet2: "उन्नत सेमीकंडक्टर जल पुनर्चक्रण प्रणालियाँ",
+    us_bullet3: "समुदाय आधारित STEM और सततता निवेश",
+
+    eu_desc: "यूरोपीय सततता पहलें हरित विनिर्माण, कार्बन कमी रणनीतियों और ईयू जलवायु लक्ष्यों के नियामक संरेखण पर जोर देती हैं।",
+    eu_bullet1: "कम-कार्बन विनिर्माण सुविधाएँ",
+    eu_bullet2: "यूरोपीय नवीकरणीय ऊर्जा प्रदाताओं के साथ साझेदारी",
+    eu_bullet3: "आपूर्ति श्रृंखला उत्सर्जन ट्रैकिंग",
+
+    asia_desc: "इंटेल का एशिया-प्रशांत क्षेत्र ऊर्जा-कुशल डेटा केंद्रों, नवीकरणीय ऊर्जा एकीकरण और सतत बुनियादी ढांचा साझेदारियों को आगे बढ़ाता है।",
+    asia_bullet1: "हरित डेटा केंद्र अनुकूलन",
+    asia_bullet2: "सौर और पवन ऊर्जा एकीकरण कार्यक्रम",
+    asia_bullet3: "जल संरक्षण विस्तार परियोजनाएँ",
+
+    stats_title: "सततता प्रगति",
+    stats_renewable: "नवीकरणीय बिजली उपयोग",
+    stats_water: "वैश्विक जल पुनर्स्थापन",
+    stats_carbon: "कार्बन उत्सर्जन में कमी",
+
   },
 
   ko: {
@@ -1011,6 +1173,42 @@ const translations = {
     footer_privacy: "개인정보 처리방침",
     footer_terms: "이용 약관",
     footer_contact: "문의하기",
+
+    innovation_button: "인텔 혁신에 대해 자세히 알아보기",
+    navbar_title: "인텔 타임라인",
+
+    impact_title: "지속 가능성 영향 분야",
+    impact_climate: "기후 행동",
+    impact_climate_desc: "인텔은 2040년까지 온실가스 순배출 제로를 달성하기 위해 최선을 다하고 있습니다.",
+    impact_energy: "재생 에너지",
+    impact_energy_desc: "전 세계 제조 시설에서 재생 전력 사용을 확대하고 있습니다.",
+    impact_water: "수자원 관리",
+    impact_water_desc: "고급 재활용 시스템을 통해 수십억 갤런의 물을 절약하고 있습니다.",
+
+    global_title: "글로벌 지속 가능성 이니셔티브",
+    tab_us: "미국",
+    tab_eu: "유럽",
+    tab_asia: "아시아",
+
+    us_desc: "인텔의 미국 운영은 재생 전력 조달, 반도체 제조 효율성, 그리고 애리조나 및 오리건 시설의 수자원 복원 프로젝트에 중점을 두고 있습니다.",
+    us_bullet1: "주요 캠퍼스에서 100% 재생 전력 사용",
+    us_bullet2: "첨단 반도체 용수 재활용 시스템",
+    us_bullet3: "지역사회 STEM 및 지속 가능성 투자",
+
+    eu_desc: "유럽의 지속 가능성 이니셔티브는 친환경 제조, 탄소 감축 전략, 그리고 EU 기후 목표에 대한 규제 정합성을 강조합니다.",
+    eu_bullet1: "저탄소 제조 시설",
+    eu_bullet2: "유럽 재생 에너지 공급업체와의 파트너십",
+    eu_bullet3: "공급망 배출 추적",
+
+    asia_desc: "인텔의 아시아·태평양 지역은 에너지 효율적인 데이터 센터, 재생 에너지 통합, 지속 가능한 인프라 파트너십을 추진하고 있습니다.",
+    asia_bullet1: "친환경 데이터 센터 최적화",
+    asia_bullet2: "태양광 및 풍력 통합 프로그램",
+    asia_bullet3: "수자원 보존 확대 프로젝트",
+
+    stats_title: "지속 가능성 성과",
+    stats_renewable: "재생 전력 사용량",
+    stats_water: "전 세계 수자원 복원",
+    stats_carbon: "탄소 배출 감소",
 
   },
 
@@ -1086,6 +1284,42 @@ const translations = {
     footer_terms: "利用規約",
     footer_contact: "お問い合わせ",
 
+    innovation_button: "インテルのイノベーションについて詳しく見る",
+    navbar_title: "インテル年表",
+
+    impact_title: "サステナビリティ影響領域",
+    impact_climate: "気候変動対策",
+    impact_climate_desc: "インテルは 2040 年までに温室効果ガス排出量のネットゼロ達成を目指しています。",
+    impact_energy: "再生可能エネルギー",
+    impact_energy_desc: "世界中の製造施設における再生可能電力の利用拡大を推進しています。",
+    impact_water: "水資源管理",
+    impact_water_desc: "高度なリサイクルシステムにより数十億ガロンの水を節約しています。",
+
+    global_title: "グローバル・サステナビリティ施策",
+    tab_us: "米国",
+    tab_eu: "欧州",
+    tab_asia: "アジア",
+
+    us_desc: "インテルの米国事業は、再生可能電力の調達、半導体製造効率の向上、アリゾナ州およびオレゴン州施設での水資源回復プロジェクトに重点を置いています。",
+    us_bullet1: "主要キャンパスで 100% 再生可能電力を使用",
+    us_bullet2: "高度な半導体用水リサイクルシステム",
+    us_bullet3: "地域社会への STEM およびサステナビリティ投資",
+
+    eu_desc: "欧州のサステナビリティ施策は、グリーン製造、炭素削減戦略、EU 気候目標との規制整合性を重視しています。",
+    eu_bullet1: "低炭素製造施設",
+    eu_bullet2: "欧州再生可能エネルギー供給者との提携",
+    eu_bullet3: "サプライチェーン排出量の追跡",
+
+    asia_desc: "インテルのアジア太平洋地域は、省エネルギー型データセンター、再生可能エネルギー統合、持続可能なインフラパートナーシップを推進しています。",
+    asia_bullet1: "グリーンデータセンターの最適化",
+    asia_bullet2: "太陽光および風力統合プログラム",
+    asia_bullet3: "水資源保全拡大プロジェクト",
+
+    stats_title: "サステナビリティの進捗",
+    stats_renewable: "再生可能電力の使用状況",
+    stats_water: "世界的な水資源回復",
+    stats_carbon: "炭素排出削減",
+
   },
 
   ar: {
@@ -1159,6 +1393,42 @@ const translations = {
     footer_privacy: "سياسة الخصوصية",
     footer_terms: "شروط الاستخدام",
     footer_contact: "اتصل بنا",
+
+    innovation_button: "معرفة المزيد عن ابتكارات إنتل",
+    navbar_title: "الخط الزمني لإنتل",
+
+    impact_title: "مجالات التأثير في الاستدامة",
+    impact_climate: "العمل المناخي",
+    impact_climate_desc: "تلتزم إنتل بتحقيق صافي انبعاثات صفري للغازات الدفيئة بحلول عام 2040.",
+    impact_energy: "الطاقة المتجددة",
+    impact_energy_desc: "زيادة استخدام الكهرباء المتجددة في مرافق التصنيع حول العالم.",
+    impact_water: "إدارة المياه",
+    impact_water_desc: "الحفاظ على مليارات الجالونات من المياه من خلال أنظمة إعادة التدوير المتقدمة.",
+
+    global_title: "المبادرات العالمية للاستدامة",
+    tab_us: "الولايات المتحدة",
+    tab_eu: "أوروبا",
+    tab_asia: "آسيا",
+
+    us_desc: "تركز عمليات إنتل في الولايات المتحدة على مصادر الكهرباء المتجددة، وكفاءة تصنيع أشباه الموصلات، ومشاريع استعادة المياه في منشآت أريزونا وأوريغون.",
+    us_bullet1: "100٪ كهرباء متجددة في الحرم الجامعي الرئيسي",
+    us_bullet2: "أنظمة متقدمة لإعادة تدوير مياه أشباه الموصلات",
+    us_bullet3: "استثمارات مجتمعية في مجالات STEM والاستدامة",
+
+    eu_desc: "تركز المبادرات الأوروبية للاستدامة على التصنيع الأخضر، واستراتيجيات خفض الكربون، والامتثال التنظيمي لأهداف المناخ الأوروبية.",
+    eu_bullet1: "منشآت تصنيع منخفضة الكربون",
+    eu_bullet2: "شراكات مع مزودي الطاقة المتجددة في أوروبا",
+    eu_bullet3: "تتبع انبعاثات سلسلة التوريد",
+
+    asia_desc: "تعزز منطقة آسيا والمحيط الهادئ لدى إنتل مراكز البيانات الموفرة للطاقة، ودمج الطاقة المتجددة، والشراكات الخاصة بالبنية التحتية المستدامة.",
+    asia_bullet1: "تحسين مراكز البيانات الخضراء",
+    asia_bullet2: "برامج دمج الطاقة الشمسية وطاقة الرياح",
+    asia_bullet3: "مشاريع توسيع الحفاظ على المياه",
+
+    stats_title: "تقدم الاستدامة",
+    stats_renewable: "استخدام الكهرباء المتجددة",
+    stats_water: "استعادة المياه عالميًا",
+    stats_carbon: "خفض انبعاثات الكربون",
 
   },
 
@@ -1234,6 +1504,42 @@ const translations = {
     footer_terms: "شرایط استفاده",
     footer_contact: "تماس با ما",
 
+    innovation_button: "اطلاعات بیشتر درباره نوآوری‌های اینتل",
+    navbar_title: "خط زمانی اینتل",
+
+    impact_title: "حوزه‌های تأثیر پایداری",
+    impact_climate: "اقدام اقلیمی",
+    impact_climate_desc: "اینتل متعهد است تا سال 2040 به انتشار خالص صفر گازهای گلخانه‌ای دست یابد.",
+    impact_energy: "انرژی تجدیدپذیر",
+    impact_energy_desc: "افزایش استفاده از برق تجدیدپذیر در تأسیسات تولیدی در سراسر جهان.",
+    impact_water: "مدیریت منابع آب",
+    impact_water_desc: "صرفه‌جویی در میلیاردها گالن آب از طریق سامانه‌های پیشرفته بازیافت.",
+
+    global_title: "ابتکارات جهانی پایداری",
+    tab_us: "ایالات متحده",
+    tab_eu: "اروپا",
+    tab_asia: "آسیا",
+
+    us_desc: "فعالیت‌های اینتل در ایالات متحده بر تأمین برق تجدیدپذیر، بهبود بهره‌وری تولید نیمه‌هادی‌ها و پروژه‌های احیای منابع آب در تأسیسات آریزونا و اورگان متمرکز است.",
+    us_bullet1: "۱۰۰٪ برق تجدیدپذیر در پردیس‌های اصلی",
+    us_bullet2: "سامانه‌های پیشرفته بازیافت آب مورد استفاده در نیمه‌هادی‌ها",
+    us_bullet3: "سرمایه‌گذاری‌های اجتماعی در حوزه‌های STEM و پایداری",
+
+    eu_desc: "ابتکارات پایداری اروپا بر تولید سبز، راهبردهای کاهش کربن و هم‌سویی مقررات با اهداف اقلیمی اتحادیه اروپا تأکید دارد.",
+    eu_bullet1: "تأسیسات تولیدی کم‌کربن",
+    eu_bullet2: "شراکت با تأمین‌کنندگان انرژی تجدیدپذیر اروپایی",
+    eu_bullet3: "رهگیری انتشار کربن در زنجیره تأمین",
+
+    asia_desc: "منطقه آسیا-اقیانوسیه اینتل مراکز داده کم‌مصرف، ادغام انرژی‌های تجدیدپذیر و همکاری‌های زیرساختی پایدار را توسعه می‌دهد.",
+    asia_bullet1: "بهینه‌سازی مراکز داده سبز",
+    asia_bullet2: "برنامه‌های ادغام انرژی خورشیدی و بادی",
+    asia_bullet3: "پروژه‌های توسعه حفاظت از منابع آب",
+
+    stats_title: "پیشرفت پایداری",
+    stats_renewable: "میزان استفاده از برق تجدیدپذیر",
+    stats_water: "احیای منابع آب در سطح جهانی",
+    stats_carbon: "کاهش انتشار کربن",
+
   },
 
   ur: {
@@ -1307,6 +1613,43 @@ const translations = {
     footer_privacy: "رازداری کی پالیسی",
     footer_terms: "استعمال کی شرائط",
     footer_contact: "رابطہ کریں",
+
+    innovation_button: "انٹیل کی جدت کے بارے میں مزید جانیں",
+    navbar_title: "انٹیل ٹائم لائن",
+
+    impact_title: "پائیداری کے اثرات کے شعبے",
+    impact_climate: "موسمیاتی اقدام",
+    impact_climate_desc: "انٹیل 2040 تک گرین ہاؤس گیسوں کے خالص صفر اخراج کے حصول کے لیے پرعزم ہے۔",
+    impact_energy: "قابلِ تجدید توانائی",
+    impact_energy_desc: "دنیا بھر کی مینوفیکچرنگ سہولیات میں قابلِ تجدید بجلی کے استعمال میں اضافہ۔",
+    impact_water: "آبی وسائل کا انتظام",
+    impact_water_desc: "جدید ری سائیکلنگ نظاموں کے ذریعے اربوں گیلن پانی کا تحفظ۔",
+
+    global_title: "عالمی پائیداری کی پہلیں",
+    tab_us: "ریاستہائے متحدہ",
+    tab_eu: "یورپ",
+    tab_asia: "ایشیا",
+
+    us_desc: "انٹیل کی امریکی کارروائیاں قابلِ تجدید بجلی کے حصول، سیمی کنڈکٹر مینوفیکچرنگ کی کارکردگی، اور ایریزونا اور اوریگون کی سہولیات میں پانی کی بحالی کے منصوبوں پر مرکوز ہیں۔",
+    us_bullet1: "اہم کیمپس میں 100٪ قابلِ تجدید بجلی",
+    us_bullet2: "سیمی کنڈکٹرز کے لیے جدید پانی ری سائیکلنگ نظام",
+    us_bullet3: "کمیونٹی کی سطح پر STEM اور پائیداری میں سرمایہ کاری",
+
+    eu_desc: "یورپی پائیداری کی پہلیں ماحول دوست مینوفیکچرنگ، کاربن میں کمی کی حکمتِ عملیوں، اور یورپی یونین کے موسمیاتی اہداف کے ساتھ ریگولیٹری ہم آہنگی پر زور دیتی ہیں۔",
+    eu_bullet1: "کم کاربن مینوفیکچرنگ سہولیات",
+    eu_bullet2: "یورپی قابلِ تجدید توانائی فراہم کنندگان کے ساتھ شراکت داری",
+    eu_bullet3: "سپلائی چین کے اخراج کی نگرانی",
+
+    asia_desc: "انٹیل کا ایشیا پیسیفک خطہ توانائی مؤثر ڈیٹا سینٹرز، قابلِ تجدید توانائی کے انضمام، اور پائیدار انفراسٹرکچر شراکت داریوں کو فروغ دیتا ہے۔",
+    asia_bullet1: "گرین ڈیٹا سینٹر کی اصلاح",
+    asia_bullet2: "شمسی اور ہوائی توانائی کے انضمام کے پروگرام",
+    asia_bullet3: "آبی وسائل کے تحفظ کے توسیعی منصوبے",
+
+    stats_title: "پائیداری کی پیش رفت",
+    stats_renewable: "قابلِ تجدید بجلی کا استعمال",
+    stats_water: "عالمی سطح پر پانی کی بحالی",
+    stats_carbon: "کاربن کے اخراج میں کمی",
+
 
   }
 };
