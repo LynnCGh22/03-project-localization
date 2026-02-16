@@ -540,3 +540,15 @@ body::before {
   }
 }
 
+/* RTL support for custom timeline */
+html[dir="rtl"] .timeline {
+  direction: rtl;
+}
+
+html[dir="rtl"] .timeline-item {
+  text-align: right;
+}
+
+html[dir="rtl"] .card {
+  direction: rtl;
+}

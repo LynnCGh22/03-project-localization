@@ -5,22 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
   <link rel="stylesheet" href="style.css" />
+<!-- Bootstrap LTR -->
+<link id="bootstrap-ltr" rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+<!-- Bootstrap RTL (disabled by default) -->
+<link id="bootstrap-rtl" rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      disabled>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
   <!-- Header / Hero Section -->
   <header>
-    <div>
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
-      <h1>Sustainability Through the Ages</h1>
-      <p>
-        Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
-        and our planet.
-      </p>
-    </div>
-  </header>
+  <div>
+    <img src="img/intel-header-logo.svg" alt="Intel Logo" />
+
+    <!-- IDs for language switcher -->
+    <h1 id="title">Sustainability Through the Ages</h1>
+    <p id="subtitle">Explore Intel's journey...</p>
+  </div>
+</header>
+
 
   <!-- Timeline Section -->
   <section class="timeline">
@@ -163,6 +173,10 @@
     </div>
   </section>
 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+  <a class="navbar-brand" href="#">Intel Timeline</a>
+  
+
   <!-- Disclaimer Footer -->
   <footer class="disclaimer">
     <p>
@@ -174,6 +188,75 @@
       Intel Corporate Logo – used for academic and informational purposes
     </p>
   </footer>
+
+  <!-- Language Dropdown -->
+  <div class="dropdown ms-auto">
+  <button class="btn btn-outline-light dropdown-toggle" 
+          type="button" 
+          data-bs-toggle="dropdown">
+    🌐 Language
+  </button>
+
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" onclick="setLanguage('en')">English</a></li>
+    <li><a class="dropdown-item" onclick="setLanguage('ar')">العربية</a></li>
+    <li><a class="dropdown-item" onclick="setLanguage('fa')">فارسی</a></li>
+    <li><a class="dropdown-item" onclick="setLanguage('ur')">اردو</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" onclick="autoTranslate()">Auto‑Translate</a></li>
+  </ul>
+</div>
+<script>
+  // Manual translations
+  const translations = {
+    en: {
+      title: "Sustainability Through the Ages",
+      subtitle: "Explore Intel's journey through time, discovering how our commitment to innovation has shaped a more sustainable future."
+    },
+    ar: {
+      title: "الاستدامة عبر العصور",
+      subtitle: "استكشف رحلة إنتل عبر الزمن، واكتشف كيف شكّل التزامنا بالابتكار مستقبلًا أكثر استدامة."
+    },
+    fa: {
+      title: "پایداری در گذر زمان",
+      subtitle: "سفر اینتل در طول زمان را کشف کنید و ببینید چگونه نوآوری آینده‌ای پایدارتر را شکل داده است."
+    },
+    ur: {
+      title: "دورِ حاضر میں پائیداری",
+      subtitle: "انٹیل کے سفر کو دریافت کریں اور دیکھیں کہ کس طرح جدت نے ایک پائیدار مستقبل تشکیل دیا۔"
+    }
+  };
+
+  // Switch language manually
+  function setLanguage(lang) {
+    const html = document.documentElement;
+
+    // Set direction
+    html.lang = lang;
+    html.dir = (lang === 'ar' || lang === 'fa' || lang === 'ur') ? 'rtl' : 'ltr';
+
+    // Toggle Bootstrap RTL
+    document.getElementById('bootstrap-ltr').disabled = html.dir === 'rtl';
+    document.getElementById('bootstrap-rtl').disabled = html.dir === 'ltr';
+
+    // Apply translations
+    const t = translations[lang] || translations.en;
+    document.getElementById('title').textContent = t.title;
+    document.getElementById('subtitle').textContent = t.subtitle;
+  }
+
+  // Auto-detect language
+  function autoTranslate() {
+    const userLang = navigator.language.split('-')[0];
+
+    if (translations[userLang]) {
+      setLanguage(userLang);
+    } else {
+      setLanguage('en');
+    }
+  }
+</script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
