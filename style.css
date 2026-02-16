@@ -597,6 +597,33 @@ html[dir="rtl"] .navbar .dropdown {
   box-shadow: 0 0 10px rgba(0,113,197,0.4);
 }
 
+/* ============================= */
+/* INTEL THEME COLOR IMPROVEMENT */
+/* ============================= */
+
+.section-title {
+  color: #004A86; /* Deep Intel blue */
+}
+
+.intel-text {
+  color: #003C71; /* Softer corporate blue */
+}
+
+.accordion-body,
+.tab-content p,
+.form-label {
+  color: #003C71;
+}
+
+.progress {
+  height: 20px;
+  background-color: #e6f2fb;
+}
+
+.progress-bar {
+  font-weight: 600;
+}
+
 
 
 
