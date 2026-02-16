@@ -317,15 +317,52 @@
 </section>
 
   <!-- Disclaimer Footer -->
-  <footer class="disclaimer">
-  <p data-i18n="footer_line1">
-    Intel logo © Intel Corporation. Retrieved from the Intel Newsroom Press 
-    Resources. Used strictly for academic and informational purposes as part of 
-    a graduate-level assignment.
-  </p>
-  <p data-i18n="footer_line2">
-    Intel Corporate Logo – used for academic and informational purposes
-  </p>
+  <footer class="bg-dark text-light pt-4 pb-3 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+
+      <!-- Left: Copyright -->
+      <div class="col-md-6 mb-3">
+        <p class="mb-1" data-i18n="footer_copyright">
+          © 2026 Intel Corporation. All rights reserved.
+        </p>
+        <p class="small mb-0 text-muted" data-i18n="footer_disclaimer">
+          This website is an academic project and is not affiliated with Intel Corporation.
+        </p>
+      </div>
+
+      <!-- Right: Navigation + Contact -->
+      <div class="col-md-6 mb-3 text-md-end">
+
+        <a href="#" class="text-light me-3 text-decoration-none"
+           data-i18n="footer_privacy">
+          Privacy Policy
+        </a>
+
+        <a href="#" class="text-light me-3 text-decoration-none"
+           data-i18n="footer_terms">
+          Terms of Use
+        </a>
+
+        <a href="mailto:Lynn.Chaker@gmail.com"
+           class="text-light text-decoration-none"
+           data-i18n="footer_contact">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center small text-muted">
+      <span data-i18n="footer_line2">
+        Intel Corporate Logo – used for academic and informational purposes
+      </span>
+    </div>
+
+  </div>
 </footer>
 
 <script>
@@ -399,7 +436,12 @@ const translations = {
     newsletter_name_required: "Please enter your name.",
     newsletter_email_required: "Please enter a valid email.",
 
-
+    footer_copyright: "© 2026 Intel Corporation. All rights reserved.",
+    footer_disclaimer: "This website is an academic project and is not affiliated with Intel Corporation.",
+    footer_privacy: "Privacy Policy",
+    footer_terms: "Terms of Use",
+    footer_contact: "Contact",
+    
   },
 
   es: {
@@ -1005,7 +1047,7 @@ const translations = {
     grid3_title: "مستقبل کے اہداف",
     grid3_desc: "2040 تک نیٹ زیرو کے لیے انٹیل کا عزم اس کی طویل مدتی پائیداری حکمت عملی کی رہنمائی کرتا ہے۔",
     learn_more: "مزید جانیں",
-    
+
     newsletter_title: "انٹیل کے پائیداری نیوز لیٹر کے لیے سبسکرائب کریں",
     newsletter_desc: "موسمیاتی اقدامات، قابل تجدید توانائی کی پہل اور پائیداری کی کامیابیوں سے باخبر رہیں۔",
     newsletter_name: "مکمل نام",
