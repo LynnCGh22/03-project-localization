@@ -277,69 +277,61 @@
 </section>
 
 <!-- Sustainability Impact Accordion Section -->
-<section class="container my-5">
-  <h2 class="text-center mb-4 fw-bold" data-i18n="impact_title">
-    Sustainability Impact Areas
-  </h2>
+<section class="container my-5"> 
+  <h2 class="text-center mb-4 fw-bold" data-i18n="impact_title"> 
+    Sustainability Impact Areas 
+  </h2> 
+  
+  <div class="accordion" id="impactAccordion"></div>
+    <!--Climate Action-->
+    <div class="accordion-item"> 
+      <h2 class="accordion-header"> 
+        <button class="accordion-button" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#impact1"> 
+          <span data-i18n="impact_climate">Climate Action</span> 
+        </button> 
+      </h2> 
+      <div id="impact1" class="accordion-collapse collapse show" data-bs-parent="#impactAccordion">   <div class="accordion-body" data-i18n="impact_climate_desc"> Intel is committed to achieving net-zero greenhouse gas emissions by 2040. 
 
-  <div class="accordion" id="impactAccordion">
-
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#impact1">
-          <div class="accordion-body" data-i18n="impact_energy_desc"></div>
-        </button>
-      </h2>
-      <div id="impact1"
-           class="accordion-collapse collapse show"
-           data-bs-parent="#impactAccordion">
-        <div class="accordion-body" data-i18n="impact_climate_desc">
-          Intel is committed to achieving net-zero greenhouse gas emissions by 2040.
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#impact2">
-          <div class="accordion-body" data-i18n="impact_energy_title">Renewable Energy</div>
-           Increasing global renewable electricity usage across manufacturing facilities.
-        </button>
-      </h2>
-      <div id="impact2"
-           class="accordion-collapse collapse"
-           data-bs-parent="#impactAccordion">
-        <div class="accordion-body" data-i18n="impact_energy_desc">
-          Increasing global renewable electricity usage across manufacturing facilities.
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#impact3">
-          <div class="accordion-body" data-i18n="impact_water_desc">
-        </button>
-      </h2>
-      <div id="impact3"
-           class="accordion-collapse collapse"
-           data-bs-parent="#impactAccordion">
-        <div class="accordion-body" data-i18n="impact_water_desc">
-          Conserving billions of gallons of water through advanced recycling systems.
-        </div>
-      </div>
-    </div>
-
+      </div> 
+    </div> 
   </div>
+    
+    <!--Renewable energy-->
+    <div class="accordion-item"> 
+      <h2 class="accordion-header"> 
+        <button class="accordion-button collapsed" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#impact2"> 
+          <span data-i18n="impact_energy">Renewable Energy</span> 
+        </button> 
+      </h2> 
+      <div id="impact2" class="accordion-collapse collapse" data-bs-parent="#impactAccordion"> <div class="accordion-body" data-i18n="impact_energy_desc"> Increasing global renewable electricity usage across manufacturing facilities. 
+
+      </div> 
+    </div> 
+  </div>
+
+    <!--Water Stewardship-->
+    <div class="accordion-item"> 
+      <h2 class="accordion-header"> 
+        <button class="accordion-button collapsed" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#impact3"> 
+          <span data-i18n="impact_water">Water Stewardship</span> 
+        </button> 
+      </h2> 
+      <div id="impact3" class="accordion-collapse collapse" data-bs-parent="#impactAccordion"> <div class="accordion-body" data-i18n="impact_water_desc"> Conserving billions of gallons of water through advanced recycling systems. 
+
+      </div> 
+    </div> 
+  </div>
+
+</div>
 </section>
 
 <section class="container my-5">
