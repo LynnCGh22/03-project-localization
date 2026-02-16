@@ -261,6 +261,61 @@
   </div>
 </section>
 
+<!-- Newsletter Subscription Section -->
+<section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+
+      <div class="p-5 border rounded shadow bg-light text-center">
+
+        <h3 class="mb-3 fw-bold" data-i18n="newsletter_title">
+          Subscribe to Intel’s Sustainability Newsletter
+        </h3>
+
+        <p class="mb-4 text-muted" data-i18n="newsletter_desc">
+          Stay updated on climate action, renewable energy initiatives, and sustainability milestones.
+        </p>
+
+        <form class="row g-3 justify-content-center needs-validation" novalidate>
+
+          <div class="col-md-6">
+            <input type="text"
+                   class="form-control"
+                   placeholder="Full Name"
+                   data-i18n-placeholder="newsletter_name"
+                   required>
+            <div class="invalid-feedback" data-i18n="newsletter_name_required">
+              Please enter your name.
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input type="email"
+                   class="form-control"
+                   placeholder="Email Address"
+                   data-i18n-placeholder="newsletter_email"
+                   required>
+            <div class="invalid-feedback" data-i18n="newsletter_email_required">
+              Please enter a valid email.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary px-5"
+                    type="submit"
+                    data-i18n="newsletter_button">
+              Subscribe
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <!-- Disclaimer Footer -->
   <footer class="disclaimer">
   <p data-i18n="footer_line1">
@@ -335,6 +390,15 @@ const translations = {
     grid3_title: "Future Goals",
     grid3_desc: "Intel’s commitment to achieving Net-Zero emissions by 2040 drives its long-term sustainability strategy.",
     learn_more: "Learn More",
+
+    newsletter_title: "Subscribe to Intel’s Sustainability Newsletter",
+    newsletter_desc: "Stay updated on climate action, renewable energy initiatives, and sustainability milestones.",
+    newsletter_name: "Full Name",
+    newsletter_email: "Email Address",
+    newsletter_button: "Subscribe",
+    newsletter_name_required: "Please enter your name.",
+    newsletter_email_required: "Please enter a valid email.",
+
 
   },
 
@@ -885,16 +949,19 @@ function applyTranslations(lang) {
   const t = translations[lang] || translations.en;
 
   // Update all [data-i18n] elements
+  // Text content translations
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (t[key]) {
-      el.classList.add("fade-out");
-      setTimeout(() => {
-        el.textContent = t[key];
-        el.classList.remove("fade-out");
-        el.classList.add("fade-in");
-        setTimeout(() => el.classList.remove("fade-in"), 300);
-      }, 200);
+      el.textContent = t[key];
+    }
+  });
+
+  // Placeholder translations
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    if (t[key]) {
+      el.placeholder = t[key];
     }
   });
 
@@ -943,7 +1010,29 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
 });
 
+// =============================
+//  BOOTSTRAP FORM VALIDATION
+// =============================
+document.addEventListener("DOMContentLoaded", function () {
+  const forms = document.querySelectorAll(".needs-validation");
+
+  forms.forEach(form => {
+    form.addEventListener("submit", function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        event.preventDefault();
+        alert("Thank you for subscribing!");
+        form.reset();
+      }
+      form.classList.add("was-validated");
+    });
+  });
+});
+
 </script>
+
 
 <!-- Bootstrap JS Bundle (required for dropdowns) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
