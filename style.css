@@ -451,7 +451,7 @@ header img {
   padding: 40px 20px;
   text-align: center;
   color: white;
-  border-top: 2px solid rgba(0, 113, 197, 0.3);
+  border-top: 2px solid rgba(173, 230, 172, 0.815);
   border-bottom: 2px solid rgba(0, 113, 197, 0.3);
 }
 
@@ -623,6 +623,45 @@ html[dir="rtl"] .navbar .dropdown {
 .progress-bar {
   font-weight: 600;
 }
+
+/* ============================= */
+/* Improve Readability on Dark Background */
+/* ============================= */
+
+/* Section Titles */
+.section-title {
+  color: #ffffff !important;   /* White */
+}
+
+/* Tab headings */
+.nav-tabs .nav-link {
+  color: #cfe9ff !important;   /* Light blue */
+}
+
+.nav-tabs .nav-link.active {
+  color: #000 !important;
+}
+
+/* Progress Labels */
+.form-label {
+  color: #e0f7ff !important;   /* Very light blue */
+  font-weight: 500;
+}
+
+/* Tab Content Text */
+.tab-content p,
+.tab-content li {
+  color: #003c71; /* Keep darker since bg-light is used */
+}
+
+.section-title {
+  color: #b9ffcc !important;
+}
+
+.form-label {
+  color: #a8ffd6 !important;
+}
+
 
 
 
