@@ -158,54 +158,55 @@
 
   </section>
 
-  <!-- Three Column Info Section -->
+<!-- Three Column Bootstrap Info Section -->
 <section class="container my-5">
-  <div class="row text-center g-4">
+  <div class="row g-4 text-center">
 
     <!-- Column 1 -->
     <div class="col-12 col-md-6 col-lg-4">
-      <div class="info-card h-100 p-4">
-        <div class="icon mb-3">
-          <i class="bi bi-cpu-fill"></i>
+      <div class="p-4 h-100 border rounded bg-primary bg-opacity-25 shadow-sm">
+        <div class="mb-3">
+          <i class="bi bi-cpu-fill fs-1 text-success"></i>
         </div>
-        <h4>Innovation</h4>
-        <p>
-          Discover how Intel’s technological breakthroughs transformed modern computing and semiconductor manufacturing.
+        <h4 class="fw-bold" data-i18n="grid1_title">Innovation</h4>
+        <p data-i18n="grid1_desc">
+          Intel’s groundbreaking processors and semiconductor technologies have shaped modern computing.
         </p>
-        <a href="#" class="learn-more">Learn More →</a>
+        <a href="#" class="learn-link" data-i18n="learn_more">Learn More</a>
       </div>
     </div>
 
     <!-- Column 2 -->
     <div class="col-12 col-md-6 col-lg-4">
-      <div class="info-card h-100 p-4">
-        <div class="icon mb-3">
-          <i class="bi bi-globe2"></i>
+      <div class="p-4 h-100 border rounded bg-primary bg-opacity-25 shadow-sm">
+        <div class="mb-3">
+          <i class="bi bi-globe2 fs-1 text-info"></i>
         </div>
-        <h4>Global Impact</h4>
-        <p>
-          Explore Intel’s environmental initiatives and global partnerships that drive sustainable progress.
+        <h4 class="fw-bold" data-i18n="grid2_title">Global Responsibility</h4>
+        <p data-i18n="grid2_desc">
+          Intel invests in renewable energy, water stewardship, and waste reduction worldwide.
         </p>
-        <a href="#" class="learn-more">Learn More →</a>
+        <a href="#" class="learn-link" data-i18n="learn_more">Learn More</a>
       </div>
     </div>
 
     <!-- Column 3 -->
     <div class="col-12 col-md-6 col-lg-4">
-      <div class="info-card h-100 p-4">
-        <div class="icon mb-3">
-          <i class="bi bi-lightning-charge-fill"></i>
+      <div class="p-4 h-100 border rounded bg-primary bg-opacity-25 shadow-sm">
+        <div class="mb-3">
+          <i class="bi bi-lightning-charge-fill fs-1 text-warning"></i>
         </div>
-        <h4>Future Goals</h4>
-        <p>
-          Learn about Intel’s commitment to Net-Zero emissions and renewable energy leadership.
+        <h4 class="fw-bold" data-i18n="grid3_title">Future Goals</h4>
+        <p data-i18n="grid3_desc">
+          Intel’s commitment to achieving Net-Zero emissions by 2040 drives its long-term sustainability strategy.
         </p>
-        <a href="#" class="learn-more">Learn More →</a>
+        <a href="#" class="learn-link" data-i18n="learn_more">Learn More</a>
       </div>
     </div>
 
   </div>
 </section>
+
 
   <!--Scroll Section -->
   <p class="scroll-hint" data-i18n="scroll_hint">
@@ -326,6 +327,15 @@ const translations = {
 
     footer_line1: "Intel logo © Intel Corporation. Retrieved from the Intel Newsroom Press Resources. Used strictly for academic and informational purposes as part of a graduate-level assignment.",
     footer_line2: "Intel Corporate Logo – used for academic and informational purposes"
+
+    grid1_title: "Innovation",
+    grid1_desc: "Intel’s groundbreaking processors and semiconductor technologies have shaped modern computing.",
+    grid2_title: "Global Responsibility",
+    grid2_desc: "Intel invests in renewable energy, water stewardship, and waste reduction worldwide.",
+    grid3_title: "Future Goals",
+    grid3_desc: "Intel’s commitment to achieving Net-Zero emissions by 2040 drives its long-term sustainability strategy.",
+    learn_more: "Learn More",
+
   },
 
   es: {
@@ -377,6 +387,14 @@ const translations = {
 
     footer_line1: "Logotipo de Intel © Intel Corporation. Recuperado del Intel Newsroom Press Resources. Usado estrictamente con fines académicos e informativos como parte de un trabajo de posgrado.",
     footer_line2: "Logotipo corporativo de Intel: utilizado con fines académicos e informativos"
+    grid1_title: "Innovación",
+    grid1_desc: "Los procesadores innovadores y tecnologías de semiconductores de Intel han transformado la informática moderna.",
+    grid2_title: "Responsabilidad Global",
+    grid2_desc: "Intel invierte en energía renovable, gestión del agua y reducción de residuos en todo el mundo.",
+    grid3_title: "Objetivos Futuros",
+    grid3_desc: "El compromiso de Intel con emisiones netas cero para 2040 impulsa su estrategia de sostenibilidad a largo plazo.",
+    learn_more: "Más Información",
+
   },
 
   fr: {
@@ -428,6 +446,15 @@ const translations = {
 
     footer_line1: "Logo Intel © Intel Corporation. Extrait du Intel Newsroom Press Resources. Utilisé strictement à des fins académiques et informatives dans le cadre d’un travail de niveau master.",
     footer_line2: "Logo d’entreprise Intel – utilisé à des fins académiques et informatives"
+
+    grid1_title: "Innovation",
+    grid1_desc: "Les processeurs révolutionnaires et les technologies de semi-conducteurs d’Intel ont façonné l’informatique moderne.",
+    grid2_title: "Responsabilité Mondiale",
+    grid2_desc: "Intel investit dans les énergies renouvelables, la gestion de l’eau et la réduction des déchets à l’échelle mondiale.",
+    grid3_title: "Objectifs Futurs",
+    grid3_desc: "L’engagement d’Intel envers le zéro émission nette d’ici 2040 guide sa stratégie durable à long terme.",
+    learn_more: "En savoir plus",
+
   },
 
   zh: {
@@ -479,6 +506,15 @@ const translations = {
 
     footer_line1: "英特尔标志 © Intel Corporation。摘自 Intel 新闻室媒体资源。仅用于研究生课程中的学术和信息用途。",
     footer_line2: "英特尔公司标志——仅用于学术和信息用途"
+
+    grid1_title: "创新",
+    grid1_desc: "英特尔的突破性处理器和半导体技术塑造了现代计算。",
+    grid2_title: "全球责任",
+    grid2_desc: "英特尔在全球投资可再生能源、水资源管理和废物减少。",
+    grid3_title: "未来目标",
+    grid3_desc: "英特尔致力于在2040年前实现净零排放，推动长期可持续发展战略。",
+    learn_more: "了解更多",
+
   },
 
   hi: {
@@ -530,6 +566,15 @@ const translations = {
 
     footer_line1: "इंटेल लोगो © Intel Corporation। Intel Newsroom Press Resources से प्राप्त। स्नातकोत्तर स्तर के असाइनमेंट के हिस्से के रूप में केवल शैक्षणिक और सूचनात्मक उद्देश्यों के लिए उपयोग किया गया।",
     footer_line2: "इंटेल कॉर्पोरेट लोगो – शैक्षणिक और सूचनात्मक उद्देश्यों के लिए उपयोग किया गया"
+
+    grid1_title: "नवाचार",
+    grid1_desc: "इंटेल के अग्रणी प्रोसेसर और सेमीकंडक्टर तकनीकों ने आधुनिक कंप्यूटिंग को आकार दिया है।",
+    grid2_title: "वैश्विक जिम्मेदारी",
+    grid2_desc: "इंटेल नवीकरणीय ऊर्जा, जल प्रबंधन और अपशिष्ट कमी में निवेश करता है।",
+    grid3_title: "भविष्य के लक्ष्य",
+    grid3_desc: "2040 तक नेट-ज़ीरो उत्सर्जन का इंटेल का संकल्प इसकी दीर्घकालिक स्थिरता रणनीति को आगे बढ़ाता है।",
+    learn_more: "और जानें",
+
   },
 
   ko: {
@@ -581,6 +626,15 @@ const translations = {
 
     footer_line1: "인텔 로고 © Intel Corporation. Intel Newsroom Press Resources에서 가져왔습니다. 대학원 수준 과제의 일부로 학술 및 정보 제공 목적으로만 사용됩니다.",
     footer_line2: "인텔 기업 로고 – 학술 및 정보 제공 목적으로 사용"
+
+    grid1_title: "혁신",
+    grid1_desc: "인텔의 혁신적인 프로세서와 반도체 기술은 현대 컴퓨팅을 형성했습니다.",
+    grid2_title: "글로벌 책임",
+    grid2_desc: "인텔은 재생 에너지, 수자원 관리 및 폐기물 감소에 투자합니다.",
+    grid3_title: "미래 목표",
+    grid3_desc: "2040년까지 넷제로 달성을 위한 인텔의 약속은 장기적인 지속 가능성 전략을 이끕니다.",
+    learn_more: "자세히 보기",
+
   },
 
   ja: {
@@ -632,6 +686,15 @@ const translations = {
 
     footer_line1: "インテルロゴ © Intel Corporation。Intel Newsroom Press Resources より取得。大学院レベルの課題の一環として、学術的および情報提供のみを目的として使用されています。",
     footer_line2: "インテル企業ロゴ – 学術および情報提供目的で使用"
+
+    grid1_title: "イノベーション",
+    grid1_desc: "インテルの革新的なプロセッサと半導体技術は現代のコンピューティングを形作りました。",
+    grid2_title: "グローバル責任",
+    grid2_desc: "インテルは再生可能エネルギー、水資源管理、廃棄物削減に投資しています。",
+    grid3_title: "将来の目標",
+    grid3_desc: "2040年までのネットゼロ達成への取り組みが、インテルの長期的な持続可能性戦略を推進しています。",
+    learn_more: "詳細を見る",
+
   },
 
   ar: {
@@ -683,6 +746,15 @@ const translations = {
 
     footer_line1: "شعار إنتل © Intel Corporation. تم الحصول عليه من Intel Newsroom Press Resources. يُستخدم حصريًا لأغراض أكاديمية ومعلوماتية كجزء من مهمة على مستوى الدراسات العليا.",
     footer_line2: "شعار إنتل المؤسسي – يُستخدم لأغراض أكاديمية ومعلوماتية"
+
+    grid1_title: "الابتكار",
+    grid1_desc: "ساهمت معالجات إنتل وتقنياتها المتقدمة في أشباه الموصلات في تشكيل الحوسبة الحديثة.",
+    grid2_title: "المسؤولية العالمية",
+    grid2_desc: "تستثمر إنتل في الطاقة المتجددة وإدارة المياه وتقليل النفايات حول العالم.",
+    grid3_title: "الأهداف المستقبلية",
+    grid3_desc: "التزام إنتل بتحقيق صافي انبعاثات صفري بحلول 2040 يقود استراتيجيتها المستدامة طويلة المدى.",
+    learn_more: "اعرف المزيد",
+
   },
 
   fa: {
@@ -734,6 +806,15 @@ const translations = {
 
     footer_line1: "لوگوی اینتل © Intel Corporation. از Intel Newsroom Press Resources دریافت شده است. صرفاً برای اهداف آموزشی و اطلاع‌رسانی به عنوان بخشی از یک پروژه در مقطع تحصیلات تکمیلی استفاده می‌شود.",
     footer_line2: "لوگوی شرکتی اینتل – مورد استفاده برای اهداف آموزشی و اطلاع‌رسانی"
+
+    grid1_title: "نوآوری",
+    grid1_desc: "پردازنده‌ها و فناوری‌های پیشرفته اینتل شکل‌دهنده رایانش مدرن بوده‌اند.",
+    grid2_title: "مسئولیت جهانی",
+    grid2_desc: "اینتل در انرژی‌های تجدیدپذیر، مدیریت آب و کاهش پسماند سرمایه‌گذاری می‌کند.",
+    grid3_title: "اهداف آینده",
+    grid3_desc: "تعهد اینتل به دستیابی به صفر خالص تا سال 2040 راهبرد بلندمدت پایداری آن را هدایت می‌کند.",
+    learn_more: "بیشتر بدانید",
+
   },
 
   ur: {
@@ -785,6 +866,15 @@ const translations = {
 
     footer_line1: "انٹیل لوگو © Intel Corporation۔ Intel Newsroom Press Resources سے حاصل کردہ۔ صرف تعلیمی اور معلوماتی مقاصد کے لیے، گریجویٹ سطح کے اسائنمنٹ کے حصے کے طور پر استعمال کیا جاتا ہے۔",
     footer_line2: "انٹیل کارپوریٹ لوگو – تعلیمی اور معلوماتی مقاصد کے لیے استعمال شدہ"
+
+    grid1_title: "جدت",
+    grid1_desc: "انٹیل کے جدید پروسیسرز اور سیمی کنڈکٹر ٹیکنالوجیز نے جدید کمپیوٹنگ کو شکل دی ہے۔",
+    grid2_title: "عالمی ذمہ داری",
+    grid2_desc: "انٹیل قابلِ تجدید توانائی، پانی کے انتظام اور فضلہ میں کمی میں سرمایہ کاری کرتا ہے۔",
+    grid3_title: "مستقبل کے اہداف",
+    grid3_desc: "2040 تک نیٹ زیرو کے لیے انٹیل کا عزم اس کی طویل مدتی پائیداری حکمت عملی کی رہنمائی کرتا ہے۔",
+    learn_more: "مزید جانیں",
+
   }
 };
 
