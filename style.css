@@ -588,5 +588,15 @@ html[dir="rtl"] .navbar .dropdown {
   letter-spacing: 1px;
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: #0071C5;
+  color: white;
+}
+
+.accordion-button:hover {
+  box-shadow: 0 0 10px rgba(0,113,197,0.4);
+}
+
+
 
 
