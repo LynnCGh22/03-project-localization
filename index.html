@@ -162,22 +162,6 @@
     Scroll to view timeline | Hover over cards to learn more!
   </p>
 
-
-  <!-- Logo Evolution Section -->
-  <section class="logo-evolution">
-    <h2>Logo Evolution</h2>
-    <div class="logo-container">
-      <div class="logo-item">
-        <img src="img/Intel_Logo.Jpg" alt="Intel Logo 2005-2020" />
-        <p>Classic Logo<br><span class="logo-years">(2005-2020)</span></p>
-      </div>
-      <div class="logo-item">
-        <img src="img/intel-header-logo.svg" alt="Intel Logo 2020-Present" />
-        <p>Modern Logo<br><span class="logo-years">(2020-Present)</span></p>
-      </div>
-    </div>
-  </section>
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
   <a class="navbar-brand" href="#">Intel Timeline</a>
 
@@ -818,42 +802,53 @@ function autoTranslate() {
 document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
 });
-</script>
-
-
-  /* ------------------------------ APPLY TRANSLATIONS TO PAGE --------------------------------*/
+// =============================
+//  APPLY TRANSLATIONS
+// =============================
 function applyTranslations(lang) {
+  const t = translations[lang] || translations.en;
+
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    if (translations[lang] && translations[lang][key]) {
+    if (t[key]) {
       el.classList.add("fade-out");
       setTimeout(() => {
-        el.textContent = translations[lang][key];
+        el.textContent = t[key];
         el.classList.remove("fade-out");
         el.classList.add("fade-in");
         setTimeout(() => el.classList.remove("fade-in"), 300);
       }, 200);
     }
   });
+
+  if (t.logo_tagline) {
+    document.documentElement.style.setProperty("--logo-tagline", `"${t.logo_tagline}"`);
+  }
 }
 
-/* ------------------------------ MAIN LANGUAGE SWITCHER --------------------------------*/
+// =============================
+//  MAIN LANGUAGE SWITCHER
+// =============================
 function setLanguage(lang) {
   const html = document.documentElement;
+  const rtlLangs = ["ar", "fa", "ur"];
 
-  // Set direction
   html.lang = lang;
-  html.dir = ["ar", "fa", "ur"].includes(lang) ? "rtl" : "ltr";
+  html.dir = rtlLangs.includes(lang) ? "rtl" : "ltr";
 
-  // Toggle Bootstrap RTL
-  document.getElementById("bootstrap-ltr").disabled = html.dir === "rtl";
-  document.getElementById("bootstrap-rtl").disabled = html.dir === "ltr";
+  const ltrLink = document.getElementById("bootstrap-ltr");
+  const rtlLink = document.getElementById("bootstrap-rtl");
+  if (ltrLink && rtlLink) {
+    ltrLink.disabled = html.dir === "rtl";
+    rtlLink.disabled = html.dir === "ltr";
+  }
 
-  // Apply translations
   applyTranslations(lang);
 }
 
-/* ------------------------------ AUTO-DETECT LANGUAGE --------------------------------*/
+// =============================
+//  AUTO-DETECT LANGUAGE
+// =============================
 function autoTranslate() {
   const userLang = navigator.language.split("-")[0];
   if (translations[userLang]) {
@@ -862,7 +857,16 @@ function autoTranslate() {
     setLanguage("en");
   }
 }
+
+// Initialize on load
+document.addEventListener("DOMContentLoaded", () => {
+  setLanguage("en");
+});
+
 </script>
+
+<!-- Bootstrap JS Bundle (required for dropdowns) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
