@@ -695,6 +695,23 @@ html[dir="rtl"] .navbar .dropdown {
     text-shadow: 0 0 6px rgba(124, 252, 0, 0.6);
 }
 
+/* Accordion body background + readable text */
+.accordion-body {
+    background-color: #ffffff;      /* White background */
+    color: #003366;                 /* Deep Intel blue for readability */
+    border-radius: 6px;
+    padding: 1.25rem;
+}
 
+/* Accordion headers (titles) with your neon-green glow */
+.accordion-button span[data-i18n] {
+    color: #7CFC00;                 /* Light neon green */
+    text-shadow: 0 0 6px rgba(124, 252, 0, 0.6);
+}
+
+/* Optional: make the accordion button background slightly lighter */
+.accordion-button {
+    background-color: #f8f9fa;
+}
 
 
