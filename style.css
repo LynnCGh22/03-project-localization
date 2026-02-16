@@ -703,13 +703,13 @@ html[dir="rtl"] .navbar .dropdown {
     padding: 1.25rem;
 }
 
-/* Accordion headers (titles) with your neon-green glow */
+/* Accordion headers (titles) with neon-green glow */
 .accordion-button span[data-i18n] {
     color: #7CFC00;                 /* Light neon green */
     text-shadow: 0 0 6px rgba(124, 252, 0, 0.6);
 }
 
-/* Optional: make the accordion button background slightly lighter */
+/* Make the accordion button background slightly lighter */
 .accordion-button {
     background-color: #f8f9fa;
 }
