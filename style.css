@@ -655,13 +655,31 @@ html[dir="rtl"] .navbar .dropdown {
 }
 
 .section-title {
-  color: #b9ffcc !important;
+  color: lightgreen !important;
 }
 
 .form-label {
-  color: #a8ffd6 !important;
+  color: lightgreen !important;
 }
 
+[data-i18n="impact_title"] {
+    color: lightgreen; /* Light green or mint green accent */
+}
+
+[data-i18n="global_title"] {
+    color: #7CFC00;
+    text-shadow: 0 0 8px rgba(124, 252, 0, 0.6); /* To give the text a glowing effect */
+}
+
+[data-i18n="stats_title"] {
+    color: #7CFC00;
+    text-shadow: 0 0 8px rgba(124, 252, 0, 0.6); /* To give the text a glowing effect */
+}
+
+[data-i18n="impact_title"] {
+    color: #7CFC00;
+    text-shadow: 0 0 8px rgba(124, 252, 0, 0.6); /* To give the text a glowing effect */
+}
 
 
 
