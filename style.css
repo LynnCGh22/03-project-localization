@@ -24,6 +24,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.6;
   overflow-x: auto;
   background:
     radial-gradient(circle at 15% 20%, rgba(0, 113, 197, 0.15), transparent 40%),
@@ -187,6 +188,12 @@ header img {
   transform: translateY(-12px) scale(1.05);
   box-shadow: 0 20px 50px rgba(120, 4, 214, 0.6);
   filter: brightness(1.15);
+}
+
+/* FOCUS EFFECT */
+.card:focus-within,
+.card:focus {
+  transform: scale(1.05);
 }
 
 /* CARD HEADINGS */
@@ -577,15 +584,16 @@ html[dir="rtl"] .navbar .dropdown {
 .learn-link {
   display: inline-block;
   margin-top: 12px;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 600;
-  color: #66ff8a;
+  color: #00aaff;
   transition: all 0.3s ease;
 }
 
 .learn-link:hover {
-  color: #00d4ff;
+  color: #0088cc;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .accordion-button:not(.collapsed) {
@@ -606,7 +614,7 @@ html[dir="rtl"] .navbar .dropdown {
 }
 
 .intel-text {
-  color: #003C71; /* Softer corporate blue */
+  color: lightblue; /* Softer corporate blue */
 }
 
 .accordion-body,
@@ -615,13 +623,18 @@ html[dir="rtl"] .navbar .dropdown {
   color: #003C71;
 }
 
+.form-label.intel-text {
+    color: #e6f7ff; /* light blue */
+}
+
 .progress {
   height: 20px;
   background-color: #e6f2fb;
 }
 
 .progress-bar {
-  font-weight: 600;
+  font-weight: bold;
+  color:white;
 }
 
 /* ============================= */
@@ -673,19 +686,12 @@ html[dir="rtl"] .navbar .dropdown {
 }
 
 
-[data-i18n="global_title"] {
-    color: #7CFC00;
-    text-shadow: 0 0 8px rgba(124, 252, 0, 0.6); /* To give the text a glowing effect */
-}
-
+/* WCAG‑safe green for headings */
+.section-title,
+[data-i18n="impact_title"],
+[data-i18n="global_title"],
 [data-i18n="stats_title"] {
-    color: #7CFC00;
-    text-shadow: 0 0 8px rgba(124, 252, 0, 0.6); /* To give the text a glowing effect */
-}
-
-[data-i18n="impact_title"] {
-    color: #7CFC00;
-    text-shadow: 0 0 8px rgba(124, 252, 0, 0.6); /* To give the text a glowing effect */
+    color: #00b359; /* AAA green */
 }
 
 [data-i18n="grid1_title"],
@@ -697,7 +703,7 @@ html[dir="rtl"] .navbar .dropdown {
 
 /* Accordion body background + readable text */
 .accordion-body {
-    background-color: #ffffff;      /* White background */
+    background-color: white;      /* White background */
     color: #003366;                 /* Deep Intel blue for readability */
     border-radius: 6px;
     padding: 1.25rem;
@@ -714,4 +720,78 @@ html[dir="rtl"] .navbar .dropdown {
     background-color: #f8f9fa;
 }
 
+p {
+  color: #003c71; /* Keep darker since bg-light is used */
+  margin-bottom: 1rem;
+}
 
+
+header {
+  color: white;
+}
+
+header p {
+  color: white;
+}
+
+footer {
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+/* Restore readable white text inside the three info cards */
+.card .fw-bold,
+.card p,
+.card .learn-link {
+    color: #ffffff !important;
+}
+
+/* Titles */
+[data-i18n="grid1_title"],
+[data-i18n="grid2_title"],
+[data-i18n="grid3_title"] {
+    color: #ffffff !important;
+}
+
+/* Descriptions */
+[data-i18n="grid1_desc"],
+[data-i18n="grid2_desc"],
+[data-i18n="grid3_desc"] {
+    color: #f0f0f0 !important;
+}
+
+/* Learn More links */
+.learn-link {
+    color: #aee6ff !important;
+}
+
+.learn-link:hover {
+    color: #66d9ff !important;
+}
+.dropdown-item {
+    padding: 12px 16px;
+}
+
+.nav-link {
+    padding: 12px 20px !important;
+}
+
+.learn-link {
+    padding: 8px 4px;
+    display: inline-block;
+}
+
+.accordion-button {
+    padding: 1.25rem;
+}
+
+button:focus,
+a:focus,
+.nav-link:focus,
+.dropdown-item:focus {
+    outline: 3px solid #00c6ff;
+    outline-offset: 2px;
+}
